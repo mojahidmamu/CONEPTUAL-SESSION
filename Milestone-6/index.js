@@ -25,3 +25,7 @@ const result = numbers.filter( (item) => item < 30)
 const result2 = numbers.find( (item) => item < 30)
 console.log(result)
 console.log(result2)
+
+setTimeout( () => {
+  
+}, 3000)
