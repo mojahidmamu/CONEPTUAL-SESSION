@@ -26,4 +26,4 @@ filter: to select all data within in condition --- can return all data which wit
 
 6. callback function: 
 7. async --- function: 
-
+8. fetch --- 
