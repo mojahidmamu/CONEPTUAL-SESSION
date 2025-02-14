@@ -15,5 +15,9 @@
 
 8.Data from child to parent with function--
 
+9.Event-handler
 
+10.useState & useEffect:
+ 
+11.
 
