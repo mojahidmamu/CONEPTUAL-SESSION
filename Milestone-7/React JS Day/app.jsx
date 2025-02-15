@@ -10,6 +10,7 @@ const app = () => {
       <h1>this is jsx state 0</h1>
 
       <button onClick={() => handleHeroAlom("mojahid")}>Just Hero Alom</button>
+      
     </div>
   );
 };
