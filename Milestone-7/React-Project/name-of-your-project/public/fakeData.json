@@ -1,4 +1,5 @@
-[
+{
+  "Product" : [
     {
       "id": 1,
       "name": "Elite Soccer Ball",
@@ -91,3 +92,4 @@
     }
   ]
   
+}
