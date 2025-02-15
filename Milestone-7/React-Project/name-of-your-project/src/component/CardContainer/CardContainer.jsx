@@ -3,7 +3,11 @@ import React from 'react';
 const CardContainer = () => {
     return (
         <div>
-            <h2>this is card CardContainer</h2>
+            <h1 className='text-3xl font-bold'> CardContainer</h1>
+            <div className='flex justify-around'>
+                <div>Cart</div>
+                <div>About</div>
+            </div>
         </div>
     );
 };
