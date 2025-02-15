@@ -19,5 +19,5 @@
 
 10.useState & useEffect:
 
-11.
+11.Ternary Operator: 
 
