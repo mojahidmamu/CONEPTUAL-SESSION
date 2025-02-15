@@ -6,13 +6,16 @@ const AllProducts = () => {
     const [products, setProducts] = useState([]);
 
     useEffect( () => {
-        fetch("../../../public/fakeData.json()")
+        // fetch("../../../public/fakeData.json()")
+        fetch("/fakeData.json") 
         .then(res => res.json())
         .then(data => {
-            console.log(data)
+            // console.log(data)
+             setProducts(data.products)
         })
-        .catch(error => console.error('error fetching data', error));
+        .catch(error => console.error('error fetching data', error))
     }, [])
+    // console.log(products)
 
     return (
         <div>
