@@ -1,0 +1,93 @@
+[
+    {
+      "id": 1,
+      "name": "Elite Soccer Ball",
+      "image": "https://example.com/images/soccer-ball.jpg",
+      "description": "High-quality soccer ball for professional and amateur players.",
+      "price": 29.99,
+      "category": "Sports Equipment",
+      "isFeature": true
+    },
+    {
+      "id": 2,
+      "name": "Premium Basketball",
+      "image": "https://example.com/images/basketball.jpg",
+      "description": "Durable and high-performance basketball for indoor and outdoor play.",
+      "price": 34.99,
+      "category": "Sports Equipment",
+      "isFeature": false
+    },
+    {
+      "id": 3,
+      "name": "Running Shoes",
+      "image": "https://example.com/images/running-shoes.jpg",
+      "description": "Lightweight running shoes with excellent grip and comfort.",
+      "price": 59.99,
+      "category": "Footwear",
+      "isFeature": true
+    },
+    {
+      "id": 4,
+      "name": "Yoga Mat",
+      "image": "https://example.com/images/yoga-mat.jpg",
+      "description": "Non-slip yoga mat with extra cushioning for comfort.",
+      "price": 19.99,
+      "category": "Fitness",
+      "isFeature": false
+    },
+    {
+      "id": 5,
+      "name": "Tennis Racket",
+      "image": "https://example.com/images/tennis-racket.jpg",
+      "description": "Lightweight and durable tennis racket for all skill levels.",
+      "price": 49.99,
+      "category": "Sports Equipment",
+      "isFeature": true
+    },
+    {
+      "id": 6,
+      "name": "Boxing Gloves",
+      "image": "https://example.com/images/boxing-gloves.jpg",
+      "description": "High-quality boxing gloves for training and competitions.",
+      "price": 39.99,
+      "category": "Combat Sports",
+      "isFeature": false
+    },
+    {
+      "id": 7,
+      "name": "Swimming Goggles",
+      "image": "https://example.com/images/swimming-goggles.jpg",
+      "description": "Anti-fog swimming goggles with UV protection.",
+      "price": 14.99,
+      "category": "Water Sports",
+      "isFeature": true
+    },
+    {
+      "id": 8,
+      "name": "Cycling Helmet",
+      "image": "https://example.com/images/cycling-helmet.jpg",
+      "description": "Adjustable and lightweight cycling helmet for safety.",
+      "price": 44.99,
+      "category": "Cycling",
+      "isFeature": false
+    },
+    {
+      "id": 9,
+      "name": "Dumbbell Set",
+      "image": "https://example.com/images/dumbbell-set.jpg",
+      "description": "Adjustable dumbbell set for home and gym workouts.",
+      "price": 79.99,
+      "category": "Fitness",
+      "isFeature": true
+    },
+    {
+      "id": 10,
+      "name": "Golf Club Set",
+      "image": "https://example.com/images/golf-club-set.jpg",
+      "description": "Complete golf club set for beginners and professionals.",
+      "price": 199.99,
+      "category": "Golf",
+      "isFeature": false
+    }
+  ]
+  
