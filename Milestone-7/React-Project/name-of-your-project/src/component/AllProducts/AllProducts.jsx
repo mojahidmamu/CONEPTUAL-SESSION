@@ -38,13 +38,16 @@ const AllProducts = () => {
   return (
     <div>
       <h1 className="text-3xl font-bold">All Products</h1>
-      {products.length > 0 ? (
+      {
+        products.map((p)=><SingleProduct product={p}></SingleProduct>)
+      }
+      {/* {products.length > 0 ? (
         products.map((p) => (
           <SingleProduct key={p.id} product={p}></SingleProduct>
         ))
       ) : (
         <p className="text-gray-500">No products found.</p>
-      )}
+      )} */}
     </div>
   );
 };
