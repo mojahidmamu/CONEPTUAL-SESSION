@@ -1,13 +1,16 @@
-import React from 'react';
-import './SingleProduct.css'
+import React from "react";
+import "./SingleProduct.css";
 
-const SingleProduct = ({product}) => {
-    // console.log(product/)
-    return (
-        <div>
-            <h1>Single Product..{product}.</h1>
-        </div>
-    );
+const SingleProduct = ({ product }) => {
+    const {id, image, name, price, category, description,isFeature} = product;
+     
+  // console.log(product/)
+  return (
+    <div className="cart border-2 m-3 w-full">
+      <h1>Single Product.. .</h1>
+      <img src={image} alt="" />
+    </div>
+  );
 };
 
-export default SingleProduct;<h1>Single Product...</h1>
+export default SingleProduct; 

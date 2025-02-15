@@ -16,7 +16,7 @@ const AllProducts = () => {
         return res.json();
       })
       .then((data) => {
-        console.log("Fetched Data:", data);
+        console.log(  data);
         setProducts(Array.isArray(data) ? data : data.products || []);
         setLoading(false);
       })
@@ -39,7 +39,7 @@ const AllProducts = () => {
     <div>
       <h1 className="text-3xl font-bold">All Products</h1>
       {
-        products.map((p)=><SingleProduct product={p}></SingleProduct>)
+        products.map((p)=><SingleProduct key={p.id} product={p}></SingleProduct>)
       }
       {/* {products.length > 0 ? (
         products.map((p) => (
