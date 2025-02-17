@@ -12,7 +12,7 @@ const AllProducts = () => {
       .then(res => res.json())
       .then(data => {
         // console.log(data.Product)
-        // console.log(data)
+        // console.log(data)  
         setProducts(data.Product)
       })
       // console.log(products)
@@ -37,7 +37,7 @@ const AllProducts = () => {
 
   if (loading) {
     return <p className="text-blue-500">🔄 Loading products...</p>;
-  }
+  } 
 
   if (error) {
     return <p className="text-red-500">❌ Error: {error}</p>;
@@ -46,8 +46,9 @@ const AllProducts = () => {
   return (
     <div>
       <h1 className="text-3xl font-bold">All Products</h1>
+      {/* <SingleProduct></SingleProduct> */}
       {
-        products.map((p)=><SingleProduct key={p.id} product={p}></SingleProduct>)
+        products.map((p)=><SingleProduct key={p.id}  Product={p}></SingleProduct>)
       }
 
       {/* {products.length > 0 ? (
