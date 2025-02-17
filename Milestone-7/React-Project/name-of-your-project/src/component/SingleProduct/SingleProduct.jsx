@@ -2,7 +2,7 @@ import React from "react";
 import "./SingleProduct.css";
 
 const SingleProduct = ({ product }) => {  
-  console.log(product)
+  // console.log(product)
     // const {id, image, name, price, category, description,isFeature} = product;
      
   // console.log(product/)

@@ -11,8 +11,8 @@ const AllProducts = () => {
     fetch("/fakeData.json") 
       .then(res => res.json())
       .then(data => {
-        // console.log(data.Product)
         // console.log(data)  
+        // console.log(data.Product)
         setProducts(data.products)
       })
       console.log(products)
@@ -37,15 +37,8 @@ const AllProducts = () => {
       <h1 className="text-3xl font-bold">All Products</h1>
       {
         products.map((p)=><SingleProduct key={p.id}  product={p}></SingleProduct>)
-      }
-
-      {/* {products.length > 0 ? (
-        products.map((p) => (
-          <SingleProduct key={p.id} product={p}></SingleProduct>
-        ))
-      ) : (
-        <p className="text-gray-500">No products found.</p>
-      )} */}
+      } 
+      
     </div>
   );
 };
