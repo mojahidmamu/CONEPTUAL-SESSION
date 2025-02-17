@@ -11,8 +11,12 @@ const AllProducts = () => {
     fetch("/fakeData.json") 
       .then(res => res.json())
       .then(data => {
+        // console.log(data.Product)
+        // console.log(data)
         setProducts(data.Product)
       })
+      // console.log(products)
+
       // .then((res) => {
       //   if (!res.ok) {
       //     throw new Error(`HTTP error! Status: ${res.status}`);
@@ -45,7 +49,7 @@ const AllProducts = () => {
       {
         products.map((p)=><SingleProduct key={p.id} product={p}></SingleProduct>)
       }
-      
+
       {/* {products.length > 0 ? (
         products.map((p) => (
           <SingleProduct key={p.id} product={p}></SingleProduct>
