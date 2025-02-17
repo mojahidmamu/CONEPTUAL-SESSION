@@ -25,7 +25,7 @@ function App() {
     }
   };
 
-  console.log(isActive);
+  // console.log(isActive);
 
   return (
     <>

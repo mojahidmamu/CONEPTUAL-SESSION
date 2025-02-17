@@ -22,8 +22,6 @@ const CardContainer = ({ handelIsActive, isActive }) => {
         </div>
       </div>
 
-      
-
       {isActive.card ? <Card></Card> : <About></About>}
     </div>
   );
