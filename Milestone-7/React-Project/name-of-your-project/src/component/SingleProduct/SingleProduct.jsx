@@ -1,8 +1,8 @@
 import React from "react";
 import "./SingleProduct.css";
 
-const SingleProduct = ({ Product }) => {  
-  console.log(Product)
+const SingleProduct = ({ product }) => {  
+  console.log(product)
     // const {id, image, name, price, category, description,isFeature} = product;
      
   // console.log(product/)
