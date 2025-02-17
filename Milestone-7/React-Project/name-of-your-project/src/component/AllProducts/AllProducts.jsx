@@ -3,7 +3,7 @@ import "./AllProducts.css";
 import SingleProduct from "../SingleProduct/SingleProduct";
 
 const AllProducts = () => {
-  const [products, setProducts] = useState([]); // Ensure it's always an array
+  const [products, setProducts] = useState([]);  
   // const [loading, setLoading] = useState(true);
   // const [error, setError] = useState(null);
 
@@ -16,18 +16,7 @@ const AllProducts = () => {
         setProducts(data.products)
       })
       console.log(products)
-
-      // .then((res) => {
-      //   if (!res.ok) {
-      //     throw new Error(`HTTP error! Status: ${res.status}`);
-      //   }
-      //   return res.json();
-      // })
-      // .then((data) => {
-      //   console.log(  data);
-      //   setProducts(Array.isArray(data) ? data : data.products || []);
-      //   setLoading(false);
-      // })
+ 
       // .catch((error) => {
       //   console.error("Error fetching data:", error);
       //   setError(error.message);
@@ -46,7 +35,6 @@ const AllProducts = () => {
   return (
     <div>
       <h1 className="text-3xl font-bold">All Products</h1>
-      {/* <SingleProduct></SingleProduct> */}
       {
         products.map((p)=><SingleProduct key={p.id}  product={p}></SingleProduct>)
       }
