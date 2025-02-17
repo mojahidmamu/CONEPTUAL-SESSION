@@ -8,23 +8,27 @@ const AllProducts = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("/fakeData.json")
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error(`HTTP error! Status: ${res.status}`);
-        }
-        return res.json();
+    fetch("/fakeData.json") 
+      .then(res => res.json())
+      .then(data => {
+        setProducts(data.Product)
       })
-      .then((data) => {
-        console.log(  data);
-        setProducts(Array.isArray(data) ? data : data.products || []);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-        setError(error.message);
-        setLoading(false);
-      });
+      // .then((res) => {
+      //   if (!res.ok) {
+      //     throw new Error(`HTTP error! Status: ${res.status}`);
+      //   }
+      //   return res.json();
+      // })
+      // .then((data) => {
+      //   console.log(  data);
+      //   setProducts(Array.isArray(data) ? data : data.products || []);
+      //   setLoading(false);
+      // })
+      // .catch((error) => {
+      //   console.error("Error fetching data:", error);
+      //   setError(error.message);
+      //   setLoading(false);
+      // });
   }, []);
 
   if (loading) {
@@ -33,7 +37,7 @@ const AllProducts = () => {
 
   if (error) {
     return <p className="text-red-500">❌ Error: {error}</p>;
-  }
+  } 
 
   return (
     <div>
@@ -41,6 +45,7 @@ const AllProducts = () => {
       {
         products.map((p)=><SingleProduct key={p.id} product={p}></SingleProduct>)
       }
+      
       {/* {products.length > 0 ? (
         products.map((p) => (
           <SingleProduct key={p.id} product={p}></SingleProduct>
