@@ -35,6 +35,10 @@ function App() {
       setSelectedProducts(newProducts);
     }
   };
+  const handelDelete = (id) => {
+    const remainingProduct = selectedProducts.filter((p) => p.id !== id);
+    setSelectedProducts(remainingProduct);
+  };
 
   // console.log(selectedProducts);
 
@@ -49,6 +53,7 @@ function App() {
           handleSelectedProduct={handleSelectedProduct}
         ></AllProducts>
         <CardContainer
+          handelDelete={handelDelete}
           selectedProducts={selectedProducts}
           isActive={isActive}
           handelIsActive={handelIsActive}
