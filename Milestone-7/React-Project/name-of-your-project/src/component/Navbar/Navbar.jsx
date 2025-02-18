@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = ({ selectedProducts }) => {
+const Navbar = ({ selectedProducts, price }) => {
   const NavLinks = (
     <>
       <li>
@@ -13,7 +13,7 @@ const Navbar = ({ selectedProducts }) => {
         <a>Card {selectedProducts.length}</a>
       </li>
       <li>
-        <a>$ 400</a>
+        <a>$ {price} </a>
       </li>
     </>
   );

@@ -26,6 +26,8 @@ function App() {
 
   const [selectedProducts, setSelectedProducts] = useState([]);
 
+  const [price, setPrice] = useState(500);
+
   const handleSelectedProduct = (product) => {
     const isExist = selectedProducts.find((p) => p.id == product.id);
     if (isExist) {
@@ -46,7 +48,7 @@ function App() {
 
   return (
     <>
-      <Navbar selectedProducts={selectedProducts}></Navbar>
+      <Navbar price={price} selectedProducts={selectedProducts}></Navbar>
 
       <div className="flex justify-around">
         <AllProducts
