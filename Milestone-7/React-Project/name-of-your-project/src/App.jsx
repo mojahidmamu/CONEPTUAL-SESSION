@@ -29,8 +29,8 @@ function App() {
   const handleSelectedProduct = (product) => {
     const isExist = selectedProducts.find((p) => p.id == product.id);
     if (isExist) {
-      alert(' this is already added')
-    } else { 
+      alert(" this is already added");
+    } else {
       const newProducts = [...selectedProducts, product];
       setSelectedProducts(newProducts);
     }
@@ -49,6 +49,7 @@ function App() {
           handleSelectedProduct={handleSelectedProduct}
         ></AllProducts>
         <CardContainer
+          selectedProducts={selectedProducts}
           isActive={isActive}
           handelIsActive={handelIsActive}
         ></CardContainer>

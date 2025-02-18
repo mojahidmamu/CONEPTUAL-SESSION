@@ -3,7 +3,7 @@ import "./CardContainer.css";
 import Card from "../Card/Card";
 import About from "../About/About";
 
-const CardContainer = ({ handelIsActive, isActive }) => {
+const CardContainer = ({ handelIsActive, isActive, selectedProducts }) => {
   return (
     <div>
       <h1 className="text-3xl font-bold"> CardContainer</h1>
@@ -22,7 +22,11 @@ const CardContainer = ({ handelIsActive, isActive }) => {
         </div>
       </div>
 
-      {isActive.card ? <Card></Card> : <About></About>}
+      {isActive.card ? (
+        <Card selectedProducts={selectedProducts}></Card>
+      ) : (
+        <About></About>
+      )}
     </div>
   );
 };
