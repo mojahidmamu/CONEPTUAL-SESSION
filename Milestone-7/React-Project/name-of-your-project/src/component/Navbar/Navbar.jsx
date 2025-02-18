@@ -1,6 +1,20 @@
 import React from "react";
 
 const Navbar = () => {
+  const NavLinks = (
+    <>
+      <li>
+        <a>Home</a>
+      </li>
+      <li>
+        <a>Product</a>
+      </li>
+      <li>
+        <a>Card 1</a>
+      </li>
+      <li><a>$ 400</a></li>
+    </>
+  );
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -25,32 +39,16 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-             
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-            <a>Product</a>
-          </li>
-            <li>
-              <a>Card 1</a>
-            </li>
+            {/*  */}
+            {NavLinks}
+
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">React LOgo</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Home</a>
-          </li>
-          <li>
-            <a>Product</a>
-          </li>
-
-          <li>
-            <a>Card 1</a>
-          </li>
+           {NavLinks}
         </ul>
       </div>
       <div className="navbar-end">

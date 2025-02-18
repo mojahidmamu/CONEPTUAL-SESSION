@@ -8,7 +8,7 @@ function App() {
   const [isActive, setIsActive] = useState({
     card: true,
     status: "cart",
-  });
+});
 
   const handelIsActive = (status) => {
     if (status == "cart") {
@@ -16,13 +16,18 @@ function App() {
         card: true,
         status: "cart",
       });
-    } 
-    else {
+    } else {
       setIsActive({
         card: false,
         status: "about",
       });
     }
+  };
+
+  const [selectedProducts, setSelectedProducts] = useState([]);
+
+  const handleSelectedProduct = (product) => {
+    console.log(product);
   };
 
   // console.log(isActive);
@@ -32,8 +37,13 @@ function App() {
       <Navbar />
 
       <div className="flex justify-around">
-        <AllProducts></AllProducts>
-        <CardContainer isActive={isActive} handelIsActive={handelIsActive}></CardContainer>
+        <AllProducts
+          handleSelectedProduct={handleSelectedProduct}
+        ></AllProducts>
+        <CardContainer
+          isActive={isActive}
+          handelIsActive={handelIsActive}
+        ></CardContainer>
       </div>
     </>
   );

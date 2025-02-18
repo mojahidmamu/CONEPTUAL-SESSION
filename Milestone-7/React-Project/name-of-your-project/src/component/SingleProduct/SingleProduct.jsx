@@ -1,8 +1,8 @@
 import React from "react";
 import "./SingleProduct.css";
 
-const SingleProduct = ({ product }) => {
-  console.log(product);
+const SingleProduct = ({ product, handleSelectedProduct}) => {
+  // console.log(product);
   const { id, image, name, price, category, description, isFeature } = product;
 
   // console.log(product/)
@@ -16,7 +16,7 @@ const SingleProduct = ({ product }) => {
         <p className="font-bold">Price: $ {price}</p>
         <p>{isFeature ? 'Feature Category' : 'NOT Category'} </p>
       </div>
-      <button className="btn btn-outline text-green-800">Add to Cart</button>
+      <button onClick={()=>handleSelectedProduct(product)} className="btn btn-outline text-green-800">Add to Cart</button>
     </div>
   );
 };
