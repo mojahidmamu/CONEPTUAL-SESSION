@@ -7,7 +7,7 @@ const Navbar = ({ selectedProducts, price }) => {
         <a>Home</a>
       </li>
       <li>
-        <a>Producted</a>
+        <a>Product</a>
       </li>
       <li>
         <a>Card {selectedProducts.length}</a>
