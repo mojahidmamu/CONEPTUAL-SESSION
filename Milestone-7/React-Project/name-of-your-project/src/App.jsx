@@ -8,7 +8,7 @@ function App() {
   const [isActive, setIsActive] = useState({
     card: true,
     status: "cart",
-});
+  });
 
   const handelIsActive = (status) => {
     if (status == "cart") {
@@ -27,8 +27,16 @@ function App() {
   const [selectedProducts, setSelectedProducts] = useState([]);
 
   const handleSelectedProduct = (product) => {
-    console.log(product);
+    const isExist = selectedProducts.find((p) => p.id == product.id);
+    if (isExist) {
+      alert(' this is already added')
+    } else { 
+      const newProducts = [...selectedProducts, product];
+      setSelectedProducts(newProducts);
+    }
   };
+
+  console.log(selectedProducts);
 
   // console.log(isActive);
 
