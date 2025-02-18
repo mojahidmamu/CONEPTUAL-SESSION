@@ -27,7 +27,7 @@ function App() {
   const [selectedProducts, setSelectedProducts] = useState([]);
 
   // Handel Increase Price
-  const [price, setPrice] = useState(0);
+  const [price, setPrice] = useState(100);
   const handleIncreasePrice = (pr) => {
     setPrice(price + pr);
   };
@@ -35,7 +35,7 @@ function App() {
   const handleDecreasePrice = (pr, id) => {
     const productPrice = selectedProducts.find( (p) => p.id == id);
     setPrice(price - productPrice)
-    setPrice((prevPrice) => Math.max(0, prevPrice - pr));
+    // setPrice((prevPrice) => Math.max(0, prevPrice - pr));
   };
 
   // Handle Product:
