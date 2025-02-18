@@ -13,9 +13,10 @@ const SingleProduct = ({ product }) => {
       <h2 className="text-3xl my-3 font-bold">{name} </h2>
       <p>{description} </p>
       <div className="flex gap-3 justify-between my-4">
-        <p className="font-bold">$ {price}</p>
+        <p className="font-bold">Price: $ {price}</p>
         <p>{isFeature ? 'Feature Category' : 'NOT Category'} </p>
       </div>
+      <button className="btn btn-outline text-green-800">View More</button>
     </div>
   );
 };
