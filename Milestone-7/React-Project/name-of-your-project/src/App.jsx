@@ -36,7 +36,7 @@ function App() {
     }
   };
 
-  console.log(selectedProducts);
+  // console.log(selectedProducts);
 
   // console.log(isActive);
 
