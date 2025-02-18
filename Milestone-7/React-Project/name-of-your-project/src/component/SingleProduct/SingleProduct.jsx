@@ -16,7 +16,7 @@ const SingleProduct = ({ product }) => {
         <p className="font-bold">Price: $ {price}</p>
         <p>{isFeature ? 'Feature Category' : 'NOT Category'} </p>
       </div>
-      <button className="btn btn-outline text-green-800">View More</button>
+      <button className="btn btn-outline text-green-800">Add to Cart</button>
     </div>
   );
 };
