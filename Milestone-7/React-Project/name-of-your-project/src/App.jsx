@@ -26,13 +26,26 @@ function App() {
 
   const [selectedProducts, setSelectedProducts] = useState([]);
 
-// Handel Increase Price
+  // Handel Increase Price
   const [price, setPrice] = useState(500);
   const handleIncreasePrice = (pr) => {
     setPrice(price + pr);
-  }
+  };
 
-  // Handle Product: 
+  const handleDecreasePrice = (pr, id) => {
+    const productPrice = selectedProducts.find( (p) => p.id == id);
+    setPrice(price + productPrice)
+    setPrice((prevPrice) => Math.max(0, prevPrice - pr));
+  };
+
+  // Handle Product:
+
+  const handelDelete = (id) => {
+    handleDecreasePrice(id);
+    const remainingProduct = selectedProducts.filter((p) => p.id !== id);
+    setSelectedProducts(remainingProduct);
+  };
+
   const handleSelectedProduct = (product) => {
     const isExist = selectedProducts.find((p) => p.id == product.id);
     if (isExist) {
@@ -42,10 +55,6 @@ function App() {
       const newProducts = [...selectedProducts, product];
       setSelectedProducts(newProducts);
     }
-  };
-  const handelDelete = (id) => {
-    const remainingProduct = selectedProducts.filter((p) => p.id !== id);
-    setSelectedProducts(remainingProduct);
   };
 
   // console.log(selectedProducts);
