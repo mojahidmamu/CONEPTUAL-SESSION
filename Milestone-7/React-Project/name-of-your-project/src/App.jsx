@@ -42,7 +42,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar selectedProducts={selectedProducts}></Navbar>
 
       <div className="flex justify-around">
         <AllProducts
