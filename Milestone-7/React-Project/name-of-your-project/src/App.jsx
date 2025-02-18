@@ -26,13 +26,19 @@ function App() {
 
   const [selectedProducts, setSelectedProducts] = useState([]);
 
+// Handel Increase Price
   const [price, setPrice] = useState(500);
+  const handleIncreasePrice = (pr) => {
+    setPrice(price + pr);
+  }
 
+  // Handle Product: 
   const handleSelectedProduct = (product) => {
     const isExist = selectedProducts.find((p) => p.id == product.id);
     if (isExist) {
       alert(" this is already added");
     } else {
+      handleIncreasePrice(product.price);
       const newProducts = [...selectedProducts, product];
       setSelectedProducts(newProducts);
     }
@@ -43,7 +49,6 @@ function App() {
   };
 
   // console.log(selectedProducts);
-
   // console.log(isActive);
 
   return (
