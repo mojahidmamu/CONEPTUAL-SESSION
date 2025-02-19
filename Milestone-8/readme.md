@@ -6,3 +6,4 @@
 4. react-router: 
 5. Link || NavLink || Navigate || useNavigate: 
 6. Details about URL : 
+7. useLocation, path, pathName, 
