@@ -8,4 +8,5 @@
 6. Details about URL :
 7. useLocation, path, pathName: 
 8. outlet- between <Navbar/> and <Footer/>:
-9.  
+9.  Nested routing: 
+10. 
