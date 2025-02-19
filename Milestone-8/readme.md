@@ -7,4 +7,5 @@
 5. Link || NavLink || Navigate || useNavigate:
 6. Details about URL :
 7. useLocation, path, pathName: 
-8. outlet: 
+8. outlet- between <Navbar/> and <Footer/>:
+9.  
