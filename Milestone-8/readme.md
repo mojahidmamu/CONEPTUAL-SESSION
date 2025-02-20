@@ -15,4 +15,5 @@
 1. React-Router--- use for single page aplication: 
 2. Data fetching-- with useEffect: 
 3. context api:
-4. 
+4. nested routing: 
+5. 
