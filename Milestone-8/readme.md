@@ -9,4 +9,5 @@
 7. useLocation, path, pathName: 
 8. outlet- between <Navbar/> and <Footer/>:
 9.  Nested routing: 
-10. 
+10. dot notation: 
+11. 
