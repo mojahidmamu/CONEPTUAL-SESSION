@@ -14,4 +14,5 @@
 ### React Router Content API: 
 1. React-Router--- use for single page aplication: 
 2. Data fetching-- with useEffect: 
-3. 
+3. context api:
+4. 
