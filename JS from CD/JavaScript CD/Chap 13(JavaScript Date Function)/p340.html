@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>(Type a title for your page here)</title>
+<script type="text/javascript"> 
+function display() { 
+var dt= new Date();
+var my_date= dt.getDate();
+/// Let us identify the format to display the date ////
+// we have to add st if it is 1, nd to be added for 2 and rd for 3 and th for other
+// let is find out the last digit of the date number
+var last_digit= my_date % 10;
+var format;
+if(last_digit==1) 
+format="st";
+else 
+if(last_digit==2)
+format="nd";
+else
+if(last_digit==3)
+
+format="rd";
+else
+format="th";
+my_date=my_date + format;
+//////// End of identifying date format ///////
+alert(my_date); 
+}
+</script>
+</head>
+<body>
+<input type=button name=test value='Show Date' onclick="display();">
+
+</body>
+
+</html>
+

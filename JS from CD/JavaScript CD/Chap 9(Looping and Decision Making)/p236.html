@@ -1,0 +1,30 @@
+<script language="javascript">
+document.write ("<h1>Multiplication table</h1>");
+document.write ("<table border=2 width=50%"); 
+
+for (i = 1; i <= 9; i++ ) {   //this is the outer loop
+  document.write ("<tr>");
+  document.write ("<td>"+i+"</td>");
+  
+   for ( j = 2; j <= 9; j++ ) { // inner loop
+        document.write ("<td>"+i * j+"</td>");
+    }
+
+   document.write ("</tr>");
+} 
+document.write ("</table>"); 
+</script>
+<script language="javascript">
+total = 0;
+even = 0;
+for ( x = 1, y = 1; x <= 10; x++, y++ ) {
+  if ( ( y % 2 ) == 0 ) {
+    even = even + y;
+  }
+  total = total + x;
+}
+
+document.write ("The total sum: "+total+"<br />");
+document.write ("The sum of even values: "+even);
+
+</script>

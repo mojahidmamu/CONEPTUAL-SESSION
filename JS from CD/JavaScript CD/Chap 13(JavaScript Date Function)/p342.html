@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>(Type a title for your page here)</title>
+<script type="text/javascript">
+function show_now(){
+var my_day=new Date()
+//var dt = new Date(\"Aug 16, 2005 05:55:00\");
+
+var day_name=new Array(7);
+day_name[0]="Sunday"
+day_name[1]="Monday"
+day_name[2]="Tuesday"
+day_name[3]="Wednesday"
+day_name[4]="Thursday"
+day_name[5]="Friday"
+day_name[6]="Saturday"
+
+alert ("Today Day is  = " + day_name[my_day.getDay()]); 
+}
+</script></head>
+<body>
+
+<input type=button value="Show Day" onclick="show_now();">
+
+</body>
+</html>
+

@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>:::show.hide:::</title>
+
+<script type="text/javascript">
+<!--
+function ShowHide(id, visibility) {
+    obj = document.getElementsByTagName("div");
+    obj[id].style.visibility = visibility;
+}
+//-->
+</script>
+
+<style type="text/css">
+<!--
+#sub1Div
+{
+visibility:hidden;
+width:80px;
+height:80px;
+position:absolute;
+left:200px;
+top:20px;
+border:1px solid #151515;
+}
+
+#sub2Div
+{
+visibility:hidden;
+width:80px;
+height:80px;
+position:absolute;
+left:200px;
+top:105px;
+border:1px solid #151515;
+}
+
+#sub3Div
+{
+visibility:hidden;
+width:80px;
+height:80px;
+position:absolute;
+left:200px;
+top:190px;
+border:1px solid #151515;
+}
+-->
+</style>
+
+</head>
+<body>
+
+<div id="sub1Div"> sub1</div>
+<div id="sub2Div"> sub2</div>
+<div id="sub3Div"> sub3</div>
+
+
+
+
+<p>onmouseover-method</p>
+
+<p>
+<a href="javascript:ShowHide('sub1Div','visible')"
+      onmouseover="ShowHide('sub1Div','visible')"
+      onmouseout="ShowHide('sub1Div','hidden')">
+      showhide.sub1
+</a>
+</p>
+
+<p>
+<a href="javascript:ShowHide('sub2Div','visible')"
+      onmouseover="ShowHide('sub2Div','visible')"
+      onmouseout="ShowHide('sub2Div','hidden')">
+      showhide.sub2
+</a>
+</p>
+
+<p>
+<a href="javascript:ShowHide('sub3Div','visible')"
+      onmouseover="ShowHide('sub3Div','visible')"
+      onmouseout="ShowHide('sub3Div','hidden')">
+      showhide.sub3
+</a>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<head>
+<form name="example">
+<input type="text" size="20" name="calculator">
+<input type="button" name="B1" value="Calculate" onclick="cal()">
+<input type="reset" name="B2" value="Reset">
+Answer:<input type="text" size="20" name="answer">
+</form>
+</head>
+<body>
+<script>
+function cal()
+{
+document.example.answer.value=
+eval(document.example.calculator.value)
+}
+</script>
+</body>
+</html>

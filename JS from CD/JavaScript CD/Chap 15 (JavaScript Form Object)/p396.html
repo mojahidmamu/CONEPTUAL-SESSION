@@ -1,0 +1,20 @@
+    <html>
+    <head>
+<script type="text/javascript">
+function validateForm()
+{
+var con = confirm("Are You Sure? Do you want to continue?");
+if (con ==false)
+{
+return false;
+}
+}
+</script>
+    </head>
+    <body>
+<form name="checkoutForm" method="post" action="landing.php" onsubmit="return validateForm()">
+    <input type="text" name="name" />
+    <input type="submit" class="button" value="Next">
+    </form>
+     </body>
+    </html>

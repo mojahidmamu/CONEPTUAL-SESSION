@@ -1,0 +1,39 @@
+    <html>
+    <head>
+<script type="text/javascript"> 
+function validate(form) { 
+// Checking if at least one period button is selected. Or not. 
+if (!document.form1.sex[0].checked && !document.form1.sex[1].checked){ 
+
+alert("Please Select Sex"); 
+return false;}
+
+
+if(!document.form1.agree.checked){alert("Please check the terms and conditions");
+ return false; } 
+
+
+return true;
+}
+</script>
+    </head>
+<body>
+   <table border='0' width='50%' cellspacing='0' cellpadding='0' >
+<form name=form1 method=post action=action_page.php onsubmit='return validate(this)'>
+<input type=hidden name=todo value=post>
+
+
+<tr bgcolor='#ffffff'><td align=center  ><font face='verdana' size='2'><b>Sex</b>
+<input type=radio name=sex value='male'>Male </font><input type=radio name=sex value='female'>
+<font face='verdana' size='2'>Female</font></td></tr>
+
+<tr><td align=center  bgcolor='#f1f1f1'><font face='verdana' size='2'>
+<input type=checkbox name=agree value='yes'>I agree to terms and conditions  </td></tr>
+
+<tr bgcolor='#ffffff'><td align=center  >
+<input type=submit value=Submit> <input type=reset value=Reset></td></tr>
+
+</table>
+</form>
+</body>
+</html>

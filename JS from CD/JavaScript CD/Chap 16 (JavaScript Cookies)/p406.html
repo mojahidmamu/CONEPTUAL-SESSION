@@ -1,0 +1,14 @@
+ReadCookie("testCookie"); // Returns value "testval"
+
+function ReadCookie(name) {
+ if (name == "") return "";
+ var strCookie =" " + document.cookie;
+ var idx = strCookie.indexOf(" " + name + "=");
+ if (idx == -1) idx = strCookie.indexOf(";" + name + "=");
+ if (idx == -1) return "";
+
+ var idx1 = strCookie.indexOf(";", idx+1);
+ if (idx1 == -1) idx1 = strCookie.length; 
+ return unescape(strCookie.substring(idx + name.length+2, idx1));
+}
+

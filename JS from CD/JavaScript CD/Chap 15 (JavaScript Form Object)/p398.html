@@ -1,0 +1,28 @@
+<html><head>
+<title>Demo of JavaScript listbox validation in a form</title>
+<script type="text/javascript">
+function data_check()
+{
+var str=document.getElementById("l1").value;
+if(str.length <=0){
+alert("Please select one option ");
+}else{
+document.forms['drop_list'].submit();// working
+}
+}
+</script>
+</head>
+<body>
+<form name="drop_list" action="listbox-validation-demock.php" method="post" id='f1'>
+<select name="Category" id="l1">
+<option value=''>Select One</option>
+<option value="PHP">PHP</option>
+<option value="ASP">ASP</option>
+<option value="JavaScript">JavaScript</option>
+<option value="HTML with design">HTML</option>
+<option value="Perl">Perl</option><option value="MySQL">MySQL</option></select>
+<input onclick="data_check()"; value="Submit Form" type="button"> 
+
+</form>
+
+</body></html>

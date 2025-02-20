@@ -1,0 +1,22 @@
+<html>
+<body>
+<script language="javascript">	
+brush_price = 5; 
+counter = 10;
+
+document.write ("<table border=\"1\" align=\"center\">");
+document.write ("<tr><th>Quantity</th>");
+document.write ("<th>Price</th></tr>");
+while ( counter <= 100 ) {
+	document.write ("<tr><td>");
+	document.write (counter);
+	document.write ("</td><td>");
+	document.write (brush_price * counter);
+	document.write ("</td></tr>");
+	counter = counter + 10;
+}
+document.write ("</table>");
+</script>
+</body>
+</html>
+            
