@@ -12,4 +12,5 @@
 10. dot notation: 
  
 ### React Router Content API: 
-1.
+1. React-Router--- use for single page aplication: 
+2. 
