@@ -17,3 +17,5 @@
 3. context api:
 4. nested routing: 
 5. oursanding performence of JavaScript: 
+6. Of-course, of-course , of-course and must & must & must-learn JacaScript: 
+7.
