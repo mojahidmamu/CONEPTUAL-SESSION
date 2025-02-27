@@ -14,4 +14,4 @@ Currently, two official plugins are available:
 3. build > authentication > google or email/password or twitter : 
 4. Then, go to firebase docs > build > authentication > web > google or others----- => step by step
 5. and follow the documentation: without optional code. from the documentation----- => step by step
-6. 
+6. and github or facebook or twetter or email/password : just follow the documentation:
