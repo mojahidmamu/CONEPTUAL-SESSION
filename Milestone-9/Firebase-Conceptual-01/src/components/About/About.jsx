@@ -10,8 +10,8 @@ const About = () => {
     }
     return (
         <div>
-           I am in about 
-           <button onClick={handleGithubLogin} className='btn btn-outline'>Github Login</button>
+           I am in about  <br />
+           <button onClick={handleGithubLogin} className='btn btn-outline my-5 mx-5'>Github Login</button>
         </div>
     );
 };
