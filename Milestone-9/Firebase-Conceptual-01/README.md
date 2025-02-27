@@ -9,5 +9,9 @@ Currently, two official plugins are available:
 
 
 ### To connect a project with firebase: 
-step-1: go to firabse: 
-step-2: 
+1. go to firabse: 
+2. go to console: 
+3. build > authentication > google or email/password or twitter : 
+4. Then, go to firebase docs > build > authentication > web > google or others-----
+5. and follow the documentation: without optional code. from the documentation-----
+6. 
