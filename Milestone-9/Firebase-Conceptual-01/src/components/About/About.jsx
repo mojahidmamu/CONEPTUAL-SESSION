@@ -13,7 +13,7 @@ const About = () => {
     return (
         <div>
            I am in about  <br />
-           <button onClick={handleGoogleLogin} className='btn btn-outline my-5 mx-5'>Google Login</button>
+           <button onClick={handleGoogleLogin  } className='btn btn-outline my-5 mx-5'>Google Login</button>
         </div>
     );
 };
