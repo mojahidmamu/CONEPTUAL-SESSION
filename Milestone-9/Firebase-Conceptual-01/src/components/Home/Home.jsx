@@ -1,26 +1,11 @@
-import {
-  GithubAuthProvider,
-  GoogleAuthProvider,
-  signInWithPopup,
-  TwitterAuthProvider,
-} from "firebase/auth";
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import auth from "../Firebase/firebase.config";
+import { authContext } from "../MainLayout/MainLayout";
 
 const Home = () => {
-  const twitterprovider = new TwitterAuthProvider();
-  const googleProvider = new GoogleAuthProvider();
-  const githubProvider = new GithubAuthProvider();
-  const handleGoogleLogin = () => {
-    signInWithPopup(auth, googleProvider).then((result) => console.log(result));
-  };
-  const handleGithubLogin = () => {
-    signInWithPopup(auth, githubProvider).then((result) => console.log(result));
-  };
-  const handleTwitterLogin = () => {
-    signInWithPopup(auth, twitterprovider).then((result) => console.log(result));
-  };
+  const contextValue = useContext(authContext);
+  const { handleGithubLogin, handleGoogleLogin, handleTwitterLogin } =
+    contextValue;
   return (
     <div>
       <h1>I am in Home...</h1>
@@ -30,10 +15,12 @@ const Home = () => {
       <br />
       <button onClick={handleGithubLogin} className="btn btn-outline my-5">
         Github Login
-      </button> <br />
+      </button>{" "}
+      <br />
       <button onClick={handleTwitterLogin} className="btn btn-outline my-5">
         Twitter Login
-      </button> <br />
+      </button>{" "}
+      <br />
       <br />
       <Link to="/about">
         <button className="btn btn-outline">Go to About</button>
