@@ -30,6 +30,8 @@ const MainLayout = () => {
     handleGithubLogin,
     handleGoogleLogin,
     handleTwitterLogin,
+    user, 
+    setUser, 
   };
   return (
     <div>
