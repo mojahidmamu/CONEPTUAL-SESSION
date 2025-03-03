@@ -2,13 +2,17 @@
 // import { Link } from "react-router-dom";
 // import { authContext } from "../MainLayout/MainLayout";
 
+import Banner from "../Banner/Banner";
+
 const Home = () => {
   // const contextValue = useContext(authContext);
   // const { handleGithubLogin, handleGoogleLogin, handleTwitterLogin } =
   //   contextValue;
   return (
     <div>
-      I am in Home..
+     <Banner></Banner>
+
+
     {/* //   <button onClick={handleGoogleLogin} className="btn btn-secondary">
     //     Google Login
     //   </button>{" "}
