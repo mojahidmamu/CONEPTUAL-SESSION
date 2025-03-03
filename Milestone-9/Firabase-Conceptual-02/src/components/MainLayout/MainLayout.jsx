@@ -7,6 +7,7 @@ import {
   signInWithPopup,
   TwitterAuthProvider,
 } from "firebase/auth";
+import Navbar from "../Navbar/Navbar";
 // export const authContext = createContext();
 
 const MainLayout = () => {
@@ -36,6 +37,7 @@ const MainLayout = () => {
   return (
     <div>
        {/* <authContext.Provider value={authData}> */}
+       <Navbar></Navbar>
         <Outlet></Outlet>
       {/* </authContext.Provider> */}
     </div>
