@@ -32,15 +32,17 @@ const MainLayout = () => {
   //   handleGithubLogin,
   //   handleGoogleLogin,
   //   handleTwitterLogin,
-  //   user, 
-  //   setUser, 
+  //   user,
+  //   setUser,
   // };
   return (
     <div>
-       {/* <authContext.Provider value={authData}> */}
-       <Navbar></Navbar>
+      {/* <authContext.Provider value={authData}> */}
+      <div>
+        <Navbar></Navbar>
         <Outlet></Outlet>
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
+      </div>
       {/* </authContext.Provider> */}
     </div>
   );
