@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "image": "https://example.com/images/treatment1.jpg",
+      "cost": 150,
+      "treatment": "Teeth Whitening",
+      "description": "A cosmetic dental procedure that lightens teeth and helps remove stains."
+    },
+    {
+      "id": 2,
+      "image": "https://example.com/images/treatment2.jpg",
+      "cost": 300,
+      "treatment": "Root Canal",
+      "description": "A treatment to repair and save a tooth that is badly decayed or infected."
+    },
+    {
+      "id": 3,
+      "image": "https://example.com/images/treatment3.jpg",
+      "cost": 200,
+      "treatment": "Braces",
+      "description": "A dental device used to correct alignment and straighten teeth."
+    },
+    {
+      "id": 4,
+      "image": "https://example.com/images/treatment4.jpg",
+      "cost": 250,
+      "treatment": "Dental Implants",
+      "description": "A surgical procedure to replace missing teeth with artificial ones."
+    },
+    {
+      "id": 5,
+      "image": "https://example.com/images/treatment5.jpg",
+      "cost": 180,
+      "treatment": "Tooth Extraction",
+      "description": "A procedure to remove a damaged or decayed tooth."
+    },
+    {
+      "id": 6,
+      "image": "https://example.com/images/treatment6.jpg",
+      "cost": 100,
+      "treatment": "Scaling & Polishing",
+      "description": "A cleaning procedure to remove plaque and tartar from teeth."
+    },
+    {
+      "id": 7,
+      "image": "https://example.com/images/treatment7.jpg",
+      "cost": 220,
+      "treatment": "Gum Surgery",
+      "description": "A procedure to treat severe gum disease and improve oral health."
+    },
+    {
+      "id": 8,
+      "image": "https://example.com/images/treatment8.jpg",
+      "cost": 350,
+      "treatment": "Veneers",
+      "description": "A cosmetic treatment that covers the front surface of teeth to enhance appearance."
+    }
+  ]
+  
