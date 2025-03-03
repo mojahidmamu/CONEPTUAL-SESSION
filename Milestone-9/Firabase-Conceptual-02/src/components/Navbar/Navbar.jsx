@@ -1,17 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import "./Navbar.css"
 
 const Navbar = () => {
   const links = (
     <>
+    {/* <NavLink to='/'>Home</NavLink> */}
       <li>
-       <Link to='/'>Home</Link>
+        <Link to="/">Home</Link>
       </li>
       <li>
-      <Link to='/about'>About</Link>
+        <Link to="/AllTreatments">All Treatments</Link>
+      </li>
+        <li>
+        <Link to="/myAppoinments">My appoinments</Link>
       </li>
       <li>
-      <Link to='/'>Services</Link>
+        <Link to="/profile">Profile</Link>
       </li>
     </>
   );
@@ -40,15 +45,13 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-           {links}
+            {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Dentist</a>
+        <a className="btn btn-ghost text-xl">TEETH WIZARD</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-        {links}
-        </ul>
+        <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
         <a className="btn btn-outline">Login</a>
