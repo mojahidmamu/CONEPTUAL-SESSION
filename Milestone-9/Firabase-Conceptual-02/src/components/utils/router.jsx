@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import AllTreatments from "../AllTreatments/AllTreatments";
 import MyAppionments from "../MyAppoinments/MyAppionments";
 import Profile from "../Profile/Profile";
+import BookMark from "../Banner/BookMark";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
             {
                 path: '/profile', 
                 element : <Profile></Profile>
+            },
+            {
+                path: '/bookMark',
+                element: <BookMark></BookMark>
             }
         ]
     },
