@@ -35,6 +35,7 @@ const MainLayout = () => {
   };
   return (
     <div>
+      <h1>This is firebase concept -02</h1>
       <authContext.Provider value={authData}>
         <Outlet></Outlet>
       </authContext.Provider>
