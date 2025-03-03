@@ -8,6 +8,7 @@ import {
   TwitterAuthProvider,
 } from "firebase/auth";
 import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 // export const authContext = createContext();
 
 const MainLayout = () => {
@@ -39,6 +40,7 @@ const MainLayout = () => {
        {/* <authContext.Provider value={authData}> */}
        <Navbar></Navbar>
         <Outlet></Outlet>
+        <Footer></Footer>
       {/* </authContext.Provider> */}
     </div>
   );
