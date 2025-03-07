@@ -2,11 +2,10 @@ import { useContext } from "react";
 import { authContext } from "../Main/Main";
 
 const About = () => {
+  const authContextValue = useContext(authContext);
+  console.log("this is authContext", authContextValue);
 
-  const authContextValue = useContext(authContext)
-  console.log('this is authContext', authContextValue)
-
-  const {handleGithubLogin} = useContext(authContext)
+  const { handleGithubLogin } = useContext(authContext);
 
   return (
     <div>
