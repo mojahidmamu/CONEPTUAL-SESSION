@@ -6,6 +6,7 @@ import Login from "../Login.jsx/Login";
 import PersonalDetails from "../PersonalDetails/PersonalDetails";
 
 const router = createBrowserRouter([
+    
     {
         path: '/', 
         element:  <Main></Main>,
