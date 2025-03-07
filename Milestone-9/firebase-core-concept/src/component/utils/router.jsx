@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import About from "../About/About";
 import Login from "../Login.jsx/Login";
 import PersonalDetails from "../PersonalDetails/PersonalDetails";
+import SingUp from "../SingUp/SingUp";
 
 const router = createBrowserRouter([
     
@@ -20,13 +21,17 @@ const router = createBrowserRouter([
                 element: <About></About>
             },
             {
+                path: '/details',
+                element: <PersonalDetails></PersonalDetails>
+            },
+            {
+                path: '/singup',
+                element: <SingUp></SingUp>
+            },
+            {
                 path: '/login',
                 element: <Login></Login>
             },
-            {
-                path: '/details',
-                element: <PersonalDetails></PersonalDetails>
-            }
         ]
     }
 ])
