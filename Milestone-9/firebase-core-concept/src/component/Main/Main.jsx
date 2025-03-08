@@ -6,52 +6,68 @@ import {
   GithubAuthProvider,
   signInWithPopup,
   OAuthProvider,
+  onAuthStateChanged,
 } from "firebase/auth";
 import auth from "../Firebase/firebase.config";
+
 export const authContext = createContext();
 
 const Main = () => {
   const [user, setUser] = useState(null);
 
+  // Listen for auth state changes (Keeps user logged in after reload)
   useEffect(() => {
-    console.log("user state: ", user);
-  }, [user]);
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser); // Update state with the logged-in user
+      console.log("Auth state changed:", currentUser);
+    });
+
+    return () => unsubscribe(); // Cleanup on unmount
+  }, []);
 
   const googleProvider = new GoogleAuthProvider();
   const githubProvider = new GithubAuthProvider();
   const microsoftProvider = new OAuthProvider("microsoft.com");
-  // Function-1
+
+  // Google login function
   const handleGoogleLogin = () => {
-    signInWithPopup(auth, googleProvider).then((result) =>
-      setUser(result.user)
-    );
-    //   .catch((error) => console.error(error));
+    signInWithPopup(auth, googleProvider)
+      .then((result) => {
+        setUser(result.user);
+        console.log("Google Sign-in Successful:", result.user);
+      })
+      .catch((error) => {
+        console.error("Google Sign-in Error:", error.message);
+        alert(`Error: ${error.message}`); // Show alert for debugging
+      });
   };
-  // Function -02
+
+  // GitHub login function
   const handleGithubLogin = () => {
-    signInWithPopup(auth, githubProvider).then((result) =>
-      setUser(result.user)
-    );
-    //   .catch((error) => console.error(error));
+    signInWithPopup(auth, githubProvider)
+      .then((result) => setUser(result.user))
+      .catch((error) => console.error(error));
   };
-  //   Function -03
+
+  // Microsoft login function
   const handleMicrosoftLogin = () => {
-    signInWithPopup(auth, microsoftProvider).then((result) =>
-      console.log(result)
-    );
-    //   .catch((error) => console.error(error));
+    signInWithPopup(auth, microsoftProvider)
+      .then((result) => setUser(result.user))
+      .catch((error) => console.error(error));
   };
 
   const authData = {
+    user, // Provide user data to the context
     handleGithubLogin,
     handleGoogleLogin,
     handleMicrosoftLogin,
   };
+
   return (
     <div>
-      <Navbar></Navbar>
+      <Navbar />
       <authContext.Provider value={authData}>
-        <Outlet></Outlet>
+        <Outlet />
       </authContext.Provider>
     </div>
   );
