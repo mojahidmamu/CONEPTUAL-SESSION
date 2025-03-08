@@ -5,6 +5,7 @@ import About from "../About/About";
 import Login from "../Login.jsx/Login";
 import PersonalDetails from "../PersonalDetails/PersonalDetails";
 import SingUp from "../SingUp/SingUp";
+// import Auth from "../Auth/Auth";
 
 const router = createBrowserRouter([
     
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
                 path: '/login',
                 element: <Login></Login>
             },
+            // {
+            //     path: '/auth',
+            //     element: <Auth></Auth>
+            // }
         ]
     }
 ])

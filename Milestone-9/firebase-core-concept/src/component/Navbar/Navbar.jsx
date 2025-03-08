@@ -13,6 +13,9 @@ const Navbar = () => {
       <li>
         <Link to="/details">Detials</Link>
       </li>
+      <li>
+        {/* <Link to="/auth">Auth</Link> */}
+      </li>
     </>
   );
   return (
