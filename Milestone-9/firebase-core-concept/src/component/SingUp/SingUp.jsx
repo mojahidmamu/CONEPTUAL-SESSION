@@ -4,12 +4,11 @@ import { Link } from "react-router-dom";
 const SingUp = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    const Fname = e.target.Fname.vealue;
-    const Lname = e.target.Lname.value;
+    const name = e.target.name.vealue; 
     const email = e.target.email.value;
     const password = e.target.password.value;
 
-    console.log(Fname, Lname, email, password);
+    console.log(name, email, password);
   };
   return (
     <div className="hero bg-base-200 min-h-screen">
@@ -19,20 +18,14 @@ const SingUp = () => {
           <div className="card-body">
             <form onSubmit={handleSubmit} action="">
               <fieldset className="fieldset">
-                <label className="fieldset-label">First Name</label>
+                <label className="fieldset-label">Name</label>
                 <input
-                  name="Fname"
+                  name="name"
                   type="text"
                   className="input"
-                  placeholder="First Name"
+                  placeholder=" Name"
                 />
-                <label className="fieldset-label">Last Name</label>
-                <input
-                  name="Lname"
-                  type="text"
-                  className="input"
-                  placeholder="Last Name"
-                />
+                 
                 <label className="fieldset-label">Email</label>
                 <input
                   name="email"
