@@ -26,6 +26,7 @@ const User = () => {
   return (
     <div>
       <h1>Total users: {loadedUsers.length} </h1>
+      <p>Hello ! I </p>
       <div>
         {loadedUsers.map((user) => (
           <p key={user._id}>
